@@ -22,6 +22,6 @@ def shutdown():
   if Options.commands['clean']:
     if exists('base64.node'): unlink('base64.node')
   else:
-    if exists('build/default/base64.node') and not exists('base64.node'):
-      symlink('build/default/base64.node', 'base64.node')
+    if exists('build/Release/base64.node') and not exists('base64.node'):
+      symlink('build/Release/base64.node', 'base64.node')
 
